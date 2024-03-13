@@ -1,0 +1,137 @@
+footer {
+  border-top: 1px solid #ccc;
+  background-color: #f7f7f7;
+  color: #222222;
+  margin-top: 70px;
+  padding: 0 30px;
+  .header {
+    max-width: 1160px;
+    margin: auto;
+    padding: 38px 0;
+    border-bottom: 1px solid #ccc;
+
+    .list {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: #222222;
+        }
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .container {
+    max-width: 1160px;
+    margin: auto;
+
+    .all-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 38px 0;
+      gap: 30px;
+
+      .list {
+        max-width: 100%;
+        @media (min-width: 768px) {
+          max-width: 33.3333%;
+        }
+        @media (max-width: 320px) {
+          max-width: 100%;
+        }
+
+        .inner-list {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          li {
+            list-style: none;
+            h3 {
+              font-weight: 500;
+            }
+            a {
+              text-decoration: none;
+              color: #222222;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .end {
+    border-top: 1px solid #ccc;
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    .left-side {
+      .list {
+        display: flex;
+        gap: 20px;
+
+        font-weight: 400;
+        font-size: 0.875rem;
+        padding: 30px 0;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            color: #222222;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          svg {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .right-side {
+      display: flex;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        color: #222222;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .icons {
+        display: flex;
+        gap: 15px;
+        font-size: 21px;
+      }
+    }
+  }
+}

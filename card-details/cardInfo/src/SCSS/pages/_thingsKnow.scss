@@ -1,0 +1,53 @@
+#things-know {
+  margin-top: 70px;
+  padding: 0 30px;
+  .container {
+    max-width: 1160px;
+    margin: auto;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .all-list {
+      justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      .list {
+        max-width: 100%;
+        // flex: 1 1 100%;
+        @media (min-width: 768px) {
+          max-width: 33.3333%;
+        }
+        @media (max-width: 320px) {
+          max-width: 100%;
+        }
+
+        .inner-list {
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          list-style: none;
+
+          li {
+            h3 {
+              font-size: 1rem;
+              font-weight: 500px;
+            }
+          }
+        }
+
+        .show {
+          margin-top: 24px;
+          font-weight: 500;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
